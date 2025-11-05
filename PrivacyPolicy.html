@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Callahan Autoparts (Internal Use Only)</title>
+  <style>
+    :root{--fg:#111;--muted:#666;--bg:#f7f7f7;--card:#fff}
+    html,body{margin:0;padding:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--fg)}
+    .wrap{max-width:820px;margin:40px auto;padding:28px 22px;background:var(--card);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+    h1{margin:0 0 6px 0;font-size:1.8rem}
+    .date{color:var(--muted);margin-bottom:22px}
+    h2{font-size:1.15rem;margin:22px 0 8px}
+    p{line-height:1.6;margin:8px 0}
+    ul{margin:8px 0 16px 22px}
+    a{color:#0b5fff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Privacy Policy (Internal Use Only)</h1>
+    <div class="date">Last updated: <strong>08/07/2025</strong></div>
+
+    <h2>1 · Purpose</h2>
+    <p>
+      This internal integration connects <strong>QuickBooks Online (QBO)</strong> with
+      <strong>monday.com</strong> to support accounting and operations at
+      <strong>Callahan Autoparts</strong>. It synchronizes accounting records such as
+      <em>Sales Receipts</em> and <em>Refund Receipts</em>, and may be extended to other
+      QBO objects (e.g., Invoices, Bills) strictly for internal workflows.
+    </p>
+
+    <h2>2 · Data processed</h2>
+    <p>Limited accounting data required for reconciliation and filing, including:</p>
+    <ul>
+      <li>Document identifiers (e.g., Id, DocNumber, TxnDate, totals, taxes).</li>
+      <li>Line items (item names, quantities, amounts, tax lines).</li>
+      <li>Related references and metadata (e.g., CustomerRef name, DepositTo account name, create/update timestamps).</li>
+      <li>PDF copies of supported documents (when needed for internal record-keeping).</li>
+    </ul>
+    <p class="muted"><strong>Not processed:</strong> bank credentials, payment card numbers, or payroll PII beyond what appears on the accounting documents themselves.</p>
+
+    <h2>3 · Sharing</h2>
+    <p>
+      Data is <strong>not shared</strong> outside Callahan Autoparts.
+      monday.com acts as a data processor under our corporate subscription.
+      No data is sold or used for advertising.
+    </p>
+
+    <h2>4 · Retention</h2>
+    <p>
+      Records are retained for up to <strong>7 years</strong> for audit/compliance, then deleted per policy.
+      Earlier deletion may be performed upon a valid internal request at
+      <a href="mailto:josue.callahan@gmail.com">josue.callahan@gmail.com</a>.
+    </p>
+
+    <h2>5 · Security</h2>
+    <ul>
+      <li>Transport security via HTTPS/TLS 1.2+.</li>
+      <li>OAuth 2.0 with encrypted credential storage in n8n.</li>
+      <li>Access restricted to authorized employees (least privilege, MFA/SSO where available).</li>
+      <li>Data stored inside monday.com’s encrypted infrastructure and our secured n8n environment.</li>
+    </ul>
+
+    <h2>6 · Access & Revocation</h2>
+    <p>
+      Access can be revoked at any time by disconnecting the app, which triggers token revocation with Intuit.
+      Internal admins can also request removal of synchronized records from monday.com.
+    </p>
+
+    <h2>7 · Changes</h2>
+    <p>
+      We may update this policy when integrations expand to new QBO objects.
+      Material changes will update the “Last updated” date above.
+    </p>
+
+    <p class="muted">Contact: <a href="mailto:josue.callahan@gmail.com">josue.callahan@gmail.com</a></p>
+  </main>
+</body>
+</html>
